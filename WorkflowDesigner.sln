@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SDK", "SDK", "{06AFA07E-D8F2-4E15-828A-220CF12730C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkflowDesigner", "WorkflowDesigner\WorkflowDesigner.csproj", "{BD570CE3-CED5-4FFF-98CE-0100323E4D12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkflowDesigner.Web", "WorkflowDesigner.Web\WorkflowDesigner.Web.csproj", "{0D404239-3CFB-4EE0-AFDD-52B3B9DF1644}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkflowDesigner.Sdk", "WorkflowDesigner.Sdk\WorkflowDesigner.Sdk.csproj", "{DEB7F361-FB7B-404C-9599-17F6B187597D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkflowDesigner.Activities", "WorkflowDesigner.Activities\WorkflowDesigner.Activities.csproj", "{10D5AC8F-2CA4-401E-82CB-21A608EB3C87}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD570CE3-CED5-4FFF-98CE-0100323E4D12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD570CE3-CED5-4FFF-98CE-0100323E4D12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD570CE3-CED5-4FFF-98CE-0100323E4D12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD570CE3-CED5-4FFF-98CE-0100323E4D12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D404239-3CFB-4EE0-AFDD-52B3B9DF1644}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D404239-3CFB-4EE0-AFDD-52B3B9DF1644}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D404239-3CFB-4EE0-AFDD-52B3B9DF1644}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D404239-3CFB-4EE0-AFDD-52B3B9DF1644}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEB7F361-FB7B-404C-9599-17F6B187597D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEB7F361-FB7B-404C-9599-17F6B187597D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEB7F361-FB7B-404C-9599-17F6B187597D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEB7F361-FB7B-404C-9599-17F6B187597D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10D5AC8F-2CA4-401E-82CB-21A608EB3C87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10D5AC8F-2CA4-401E-82CB-21A608EB3C87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10D5AC8F-2CA4-401E-82CB-21A608EB3C87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10D5AC8F-2CA4-401E-82CB-21A608EB3C87}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DEB7F361-FB7B-404C-9599-17F6B187597D} = {06AFA07E-D8F2-4E15-828A-220CF12730C7}
+		{10D5AC8F-2CA4-401E-82CB-21A608EB3C87} = {06AFA07E-D8F2-4E15-828A-220CF12730C7}
+	EndGlobalSection
+EndGlobal

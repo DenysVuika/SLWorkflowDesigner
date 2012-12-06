@@ -1,0 +1,33 @@
+﻿<controls:ChildWindow 
+  x:Class="WorkflowDesigner.Activities.Design.Dialogs.DataJoinConfigureColumns"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+  xmlns:controls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"
+  xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+  Width="400" Height="300" 
+  Title="Configure columns">
+  
+  <Grid x:Name="LayoutRoot" Margin="2">
+    <Grid.RowDefinitions>
+      <RowDefinition />
+      <RowDefinition Height="Auto" />
+    </Grid.RowDefinitions>
+    
+    <Grid Grid.Row="0">
+      <sdk:DataGrid x:Name="mappingsGrid" AutoGenerateColumns="False" HeadersVisibility="Column">
+        <sdk:DataGrid.Columns>
+          <sdk:DataGridTextColumn Header="Left" Binding="{Binding Left}" Width="*"/>
+          <sdk:DataGridTextColumn Header="Right" Binding="{Binding Right}" Width="*"/>
+        </sdk:DataGrid.Columns>
+      </sdk:DataGrid>
+    </Grid>
+
+    <StackPanel Orientation="Horizontal" Grid.Row="1" HorizontalAlignment="Right" Margin="0,5,0,0">
+      <Button x:Name="RemoveRowButton" Content="Remove Row" Click="DoRemoveRow" Width="85" Height="23"/>
+      <Button x:Name="AddRowButton" Content="New Row" Click="DoAddNewRow" Width="85" Height="23" Margin="5,0,0,0"/>
+      <Button x:Name="CancelButton" Content="Cancel" Click="CancelButtonClick" Width="85" Height="23" Margin="5,0,0,0"/>
+      <Button x:Name="OKButton" Content="OK" Click="OkButtonClick" Width="85" Height="23" Margin="5,0,0,0" />
+    </StackPanel>    
+    
+  </Grid>
+</controls:ChildWindow>

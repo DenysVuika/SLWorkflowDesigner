@@ -1,0 +1,60 @@
+﻿<ResourceDictionary
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:local="clr-namespace:WorkflowDesigner.Sdk"
+  xmlns:design="clr-namespace:WorkflowDesigner.Sdk.Design">
+
+  <local:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+
+  <Style TargetType="design:ActivityHost">
+    <Setter Property="Effect">
+      <Setter.Value>
+        <DropShadowEffect BlurRadius="16" Color="Gray" ShadowDepth="16" Opacity="0.9"/>
+      </Setter.Value>
+    </Setter>
+    <Setter Property="BorderBrush" Value="#FF7896CC"/>
+    <Setter Property="BorderThickness" Value="2,0,2,2"/>
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="design:ActivityHost">
+          <Grid>
+            <Grid.RowDefinitions>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Border x:Name="PART_Header" Grid.Row="0" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding HeaderBorderThickness}" CornerRadius="6,6,0,0" Height="20">
+              <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                  <GradientStop Color="#FF98BAE7"/>
+                  <GradientStop Color="#FFA8B3C2" Offset="1"/>
+                  <GradientStop Color="#FF4B5DA9" Offset="0.897"/>
+                  <GradientStop Color="#FF7896CC" Offset="0.315"/>
+                </LinearGradientBrush>
+              </Border.Background>
+              <TextBlock Text="{TemplateBinding Caption}" ToolTipService.ToolTip="{TemplateBinding Caption}" Foreground="White" VerticalAlignment="Center" Margin="10,0,0,0"/>
+            </Border>
+            <!--CornerRadius="0,0,4,4" -->
+            <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Grid.Row="1">
+              <!--local:Clip.ToBounds="true" local:Clip.RadiusX="4" local:Clip.RadiusY="4"-->
+              <Grid x:Name="PART_Content" Background="#FF98BAE7">
+                <Border Background="Transparent"/>
+                <ContentPresenter Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+              </Grid>
+            </Border>
+          </Grid>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+
+  <Style TargetType="design:ObjectConnector">
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="design:ObjectConnector">
+          <Image Source="/WorkflowDesigner.Sdk;component/Themes/connector_down.png" Stretch="None"/>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+
+</ResourceDictionary>
